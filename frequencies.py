@@ -7,7 +7,7 @@ from nltk.tokenize import word_tokenize
 
 N = 2000
 
-universities = ["yale", "upenn", "princeton", "stanford", "cornell", "tufts", "harvard", "mit", "vanderbilt", "brown", "amherst", "duke"]
+universities = ["wesleyan","lafayette","columbia","colgate","bucknell","bowdoin", "upenn", "princeton", "cornell", "tufts", "harvard", "mit", "vanderbilt", "brown", "amherst", "duke"]
 
 def main():
 
