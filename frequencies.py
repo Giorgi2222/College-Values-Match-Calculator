@@ -5,9 +5,9 @@ import os
 from nltk.tokenize import word_tokenize
 
 
-N = 2000
+N = 1000
 
-universities = ["wesleyan","lafayette","columbia","colgate","bucknell","bowdoin", "upenn", "princeton", "cornell", "tufts", "harvard", "mit", "vanderbilt", "brown", "amherst", "duke"]
+universities = ["wesleyan","lafayette","columbia","colgate","bucknell","colby", "upenn", "princeton", "cornell", "tufts", "harvard", "mit", "vanderbilt", "brown", "amherst", "duke"]
 
 def main():
 
@@ -20,6 +20,7 @@ def main():
         with open(os.path.join("texts", f"{university}.txt"), 'w', encoding="utf-8") as f:
             for word in tokenized:
                 f.write(str(word) + '\n')
+    
     for university in universities:
         with open(os.path.join("texts", f"{university}.txt"), 'r', encoding="utf8") as f:
             documents[university] = [line.rstrip('\n').strip('][').strip("''").split("', '") for line in f]
@@ -81,7 +82,7 @@ def main():
             score = (corpus[filename]["growth"] * idfs["growth"] / total_words[filename]) * 2000 + (corpus[filename]["learning"] * idfs["learning"] / total_words[filename]) * 1000 + (corpus[filename]["equity"] * idfs["equity"] / total_words[filename]) * 1000
             print(f"    score: {score:.4f}")
         except KeyError:  
-            print("Error")
+            print("Access denied")
     
 
 
