@@ -5,7 +5,8 @@ A bot to scrap texts from websites and draw insights from them.
 
 ## Purpose
 
-College's declared values can be confusing and very similar to one another. This app helps to measure what is relatively more important for college. If a word appears frequently on hundreds of pages on the website, that is a good measure of its importance.    
+College's declared values can be confusing and very similar to one another. This app helps to measure what is relatively more important for college. If a word appears frequently on hundreds of pages on the website, that is a good measure of its importance.  
+(Ironically I chose a college that denied access to my bot)
 
 ## Technical details
 
